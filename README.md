@@ -19,7 +19,7 @@ Name:        Dania Qistina Binti Mazni
 University:  Universiti Utara Malaysia
 Program:     Bachelor of Information Technology
 Location:    Malaysia
-Focus:       Software Engineering, UI/UX, AI, Cybersecurity
+Focus:       Software Engineering, UI/UX, AI, 
 Languages:   Java, Python, JavaScript, SQL
 Tools:       Git, GitHub, Linux, MySQL, Figma
 Status:      Building impactful technology-driven solutions
@@ -60,8 +60,7 @@ Student productivity ecosystem featuring journaling, reminders, progress trackin
 ### Food Delivery Management System
 Java-based desktop application for customer management, restaurant operations, and order processing.
 
-### LoveMotion Interactive Application
-Interactive Java application featuring animation, dynamic interfaces, and event-driven programming.
+
 
 ---
 
