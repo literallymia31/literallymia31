@@ -1,112 +1,30 @@
-# Dania Qistina Binti Mazni
+<div align="center">
 
-### Information Technology Undergraduate | Emerging Technology Professional | Future Digital Innovator
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=28&duration=3000&center=true&vCenter=true&width=900&lines=Dania+Qistina+Binti+Mazni;Information+Technology+Undergraduate;Future+Technology+Leader;Software+Developer+%7C+UI%2FUX+Designer;Building+Technology+With+Purpose)](https://git.io/typing-svg)
 
----
+</div>
+![GitHub Streak](https://streak-stats.demolab.com/?user=literallymia31)
+name: Generate Snake
 
-## Executive Profile
+on:
+  schedule:
+    - cron: "0 0 * * *"
 
-Highly motivated and results-driven Information Technology  at Universiti Utara Malaysia (UUM), with a strong academic foundation and practical exposure in software development, systems analysis, database engineering, networking, and digital innovation. Demonstrates exceptional enthusiasm for designing technology-driven solutions that address real-world challenges while delivering meaningful user experiences.
+  workflow_dispatch:
 
-Possesses hands-on experience in multidisciplinary academic and innovation projects involving application development, user-centered design, data management, and intelligent system integration. Recognized for leadership capabilities, strategic thinking, effective communication, and a continuous commitment to professional growth in the rapidly evolving technology landscape.
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
----
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: literallymia31
+          outputs: dist/github-contribution-grid-snake.svg
 
-## My Academic Background
-
-**Universiti Utara Malaysia (UUM)**  
-Bachelor of Information Technology *(Current)*
-
-Relevant Areas of Study:
-- Software Engineering
-- Systems Analysis & Design
-- Database Management Systems
-- Computer Networking
-- Human Computer Interaction
-- Web Technologies
-- Artificial Intelligence
-- Information Security
-
-
-## Technical Competencies
-
-### Programming & Development
-- Java
-- Python
-- JavaScript
-- HTML5
-- CSS3
-- SQL
-
-### Database Technologies
-- MySQL
-- Database Design
-- Data Modeling
-- Query Optimization
-- Flask
-- Docker
-
-### Development Tools & Platforms
-- Git
-- GitHub
-- Linux
-- Visual Studio Code
-- NetBeans
-- Figma
-
-### Core Professional Competencies
-- System Analysis & Requirement Engineering
-- User Interface & User Experience Design
-- Software Testing & Debugging
-- Object-Oriented Programming
-- Agile Development Practices
-- Technical Documentation
-- Problem Solving & Critical Thinking
-
----
-
-## Selected Projects
-
-### Food Delivery Management System
-Architected and developed a comprehensive desktop-based management solution using Java, integrating customer management, restaurant operations, order processing, and user-friendly interface components.
-
-### UUM Pathway System
-Conceptualized and developed a student-centered productivity platform featuring intelligent journaling, progress analytics, task scheduling, reminders, and academic resource organization.
-
-
-### AI Smart Waste Management System
-Collaborated in the development of an innovation-driven solution utilizing smart sensors and artificial intelligence for intelligent waste detection, classification, and environmental sustainability.
-
----
-
-## Leadership & Professional Engagement
-
-- Program Director, MYStage
-- Committee Member, University Technology Initiatives
-- Innovation & Entrepreneurship Competition Participant
-- Public Speaking, Leadership, and Community Engagement Programs
-
----
-
-## Areas of Professional Interest
-
-- Software Engineering
-- Digital Transformation
-- Artificial Intelligence
-- Internet of Things (IoT)
-- Human-Centered Design
-- Data Analytics
-- Emerging Technologies
-
----
-
-## Professional Philosophy
-
-*"Technology becomes truly meaningful when innovation is combined with purpose, strategy, and human-centered design."*
-
----
-
-## Professional Networking
-
-LinkedIn: [Insert your LinkedIn URL]  
-Email: [Insert your Professional Email]  
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
