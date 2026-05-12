@@ -88,4 +88,4 @@ Java-based desktop application for customer management, restaurant operations, a
 > "I aspire to engineer technology-driven solutions that create measurable impact, elevate human experiences, and contribute meaningfully to digital transformation."
 
 # my_philosophy 
-"What I created must stand out when I am gone" 
+"What I created today must stand out when I am gone" 
